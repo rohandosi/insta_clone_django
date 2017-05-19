@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Insta Clone </title>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'insta/style.css' %}"/>
+</head>
+<body>
+<!--collapsible and responsive navbar starts-->
+<nav class="navbar navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" color="green" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">InstaClone</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'insta:login_user' %}"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!---nav bar ends here--->
+
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <p><img class="img-circle text-center" style="float: left; margin: 0px 15px 15px 0px;" src="{% static "insta/images/rohan.jpg" %}"  width="150" height="150" />
+            <h3>Rohan Dosi</h3>
+                Think Less. Live more. Cheers!
+                <br style="clear: both;" /></p>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="album text-muted">
+    <div class="container">
+
+        <div class="row">
+            <div class="card">
+                <img src="{% static "insta/images/rohan.jpg" %}"  data-src="{% static "holder.js/293x280" %}" alt='Thumbnail' class="img-thumbnail img-responsive"/>
+
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+                <img src="{% static "insta/images/rohan.jpg" %}" data-src="{% static "holder.js/293x280" %}" alt='Thumbnail' class="img-thumbnail img-responsive"/>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+                <img src="{% static "insta/images/rohan.jpg" %}"  data-src="{% static "holder.js/293x280" %}" alt='Thumbnail' class="img-thumbnail img-responsive"/>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+
+            <div class="card">
+                <img src="{% static "insta/images/rohan.jpg" %}"  data-src="{% static "holder.js/293x280" %}" alt='Thumbnail' class="img-thumbnail img-responsive"/>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+                <img src="{% static "insta/images/rohan.jpg" %}"  data-src="{% static "holder.js/293x280" %}" alt='Thumbnail' class="img-thumbnail img-responsive"/>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+                <img src="{% static "insta/images/rohan.jpg" %}"  data-src="{% static "holder.js/293x280" %}" alt='Thumbnail' class="img-thumbnail img-responsive"/>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+
+            <div class="card">
+                <img src="{% static "insta/images/rohan.jpg" %}"  data-src="{% static "holder.js/293x280" %}" alt='Thumbnail' class="img-thumbnail img-responsive"/>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+                <img src="{% static "insta/images/rohan.jpg" %}"  data-src="{% static "holder.js/293x280" %}" alt='Thumbnail' class="img-thumbnail img-responsive"/>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card">
+                <img src="{% static "insta/images/rohan.jpg" %}"  data-src="{% static "holder.js/293x280" %}" alt='Thumbnail' class="img-thumbnail img-responsive"/>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{% static 'insta/js/holder.min.js' %}"></script>
+<script>
+  $(function () {
+    Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+  });
+</script>
+</body>
+</html>
+

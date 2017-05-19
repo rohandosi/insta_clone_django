@@ -1,0 +1,70 @@
+body {
+    background: white url("images/background.png");
+}
+
+ul.errorlist {
+    padding-left: 0;
+}
+
+ul.errorlist > li {
+    list-style: none;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-brand {
+    font-family: 'Satisfy', cursive;
+}
+
+.glyphicon-star {
+    color: #CCCCCC;
+    font-size: 16px;
+}
+
+.glyphicon-star.active {
+    color: #FDB230;
+}
+
+
+.card {
+    float: left;
+    width: 33.333%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 0;
+}
+.card > img {
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 85%;
+}
+
+.card-footer {
+    background-color: blue;
+    border-color: black;
+}
+
+.card-footer p {
+    display: inline-block;
+    margin: 0px 60px 5px 10px;
+    color: #c25a74;
+}
+.card-footer p:first-child:hover {
+    color: #2389AE;
+}
+
+.card-footer p:nth-child(2):hover {
+    color: #19CF86;
+}
+
+.card-footer p:nth-child(3):hover {
+    color: #E81C4F;
+}
+
+.card-footer p:nth-child(4):hover {
+    color: #2389AE;
+}
